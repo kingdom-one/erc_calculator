@@ -1,0 +1,51 @@
+.output {
+	position: relative;
+	height: 100%;
+}
+.border-gradient {
+	position: sticky;
+	top: 10%;
+	width: 100%;
+	margin: auto;
+	border-radius: 2rem;
+	padding: 2rem;
+	background-image: linear-gradient(
+		var(--color-primary),
+		var(--color-primary--dark)
+	);
+	overflow: hidden;
+}
+
+.text-box {
+	border-radius: 2rem;
+	padding: 3rem;
+	text-align: center;
+	background-color: white;
+	span {
+		font-size: 3rem;
+		text-decoration: underline;
+		color: var(--color-primary);
+		margin-bottom: 2rem;
+	}
+	h2 {
+		font-size: 8.5rem;
+		color: var(--color-primary);
+		margin-bottom: 2rem;
+	}
+	p {
+		font-size: 2.5rem;
+		font-weight: 700;
+	}
+}
+
+.greenbtn {
+	margin-top: 2rem;
+	display: block;
+	padding: 20px 50px;
+	background-color: #00ae83;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 1rem;
+}

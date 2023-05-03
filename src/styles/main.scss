@@ -1,0 +1,17 @@
+@use './base';
+@use './header';
+
+@use './section';
+@use './output';
+
+#app {
+	position: relative;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	max-width: 75rem;
+	width: 88%;
+	margin: 0 auto;
+	gap: 4rem;
+	justify-content: center;
+	align-content: stretch;
+}

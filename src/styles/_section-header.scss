@@ -1,0 +1,17 @@
+%icon {
+	aspect-ratio: 1;
+	height: 60px;
+}
+.section-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 0;
+	.icon {
+		@extend %icon;
+	}
+	.arrow {
+		@extend %icon;
+		height: 20px;
+	}
+}

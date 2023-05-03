@@ -1,0 +1,133 @@
+:root {
+  --color-primary: #00ad82;
+  --color-primary--dark: #0a614b;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.hide {
+  display: none;
+}
+
+header:not(.section-header) {
+  text-align: center;
+  max-width: 700px;
+  width: 88%;
+  margin: 0 auto;
+  padding: 65px 0;
+}
+
+header:not(.section-header) h1 {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.section-header .arrow, .section-header .icon {
+  aspect-ratio: 1;
+  height: 60px;
+}
+
+.section-header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  display: flex;
+}
+
+.section-header .arrow {
+  height: 20px;
+}
+
+section {
+  max-width: 80rem;
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin: 0 auto 3rem;
+  padding: 2rem;
+}
+
+.section-content {
+  text-align: center;
+  border-top: 2px solid #000;
+  margin: 0 auto;
+  padding: 2rem;
+  font-size: 2.4rem;
+}
+
+.output {
+  height: 100%;
+  position: relative;
+}
+
+.border-gradient {
+  width: 100%;
+  background-image: linear-gradient(var(--color-primary), var(--color-primary--dark));
+  border-radius: 2rem;
+  margin: auto;
+  padding: 2rem;
+  position: sticky;
+  top: 10%;
+  overflow: hidden;
+}
+
+.text-box {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+
+.text-box span {
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.text-box h2 {
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  font-size: 8.5rem;
+}
+
+.text-box p {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.greenbtn {
+  color: #fff;
+  text-align: center;
+  background-color: #00ae83;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  padding: 20px 50px;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+#app {
+  max-width: 75rem;
+  width: 88%;
+  grid-template-columns: 2fr 1fr;
+  place-content: stretch center;
+  gap: 4rem;
+  margin: 0 auto;
+  display: grid;
+  position: relative;
+}
+
+/*# sourceMappingURL=index.971c2ea4.css.map */
