@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "sass": "^1.62.1"
+  }
+}
