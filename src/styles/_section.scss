@@ -26,7 +26,15 @@ input {
 	padding: 2rem;
 	text-align: center;
 }
-.icon--submit {
+button.submit {
 	display: block;
 	margin: 2rem auto 0;
+	cursor: pointer;
+	&.confirmed {
+		border: 2px solid var(--color-primary);
+		background-color: var(--color-primary);
+		color: white;
+		padding: 2rem 4rem;
+		border-radius: 1rem;
+	}
 }

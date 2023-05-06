@@ -17,5 +17,6 @@
 	.arrow {
 		@extend %icon;
 		height: 20px;
+		cursor: pointer;
 	}
 }
