@@ -34,9 +34,19 @@ header:not(.section-header) h1 {
   font-weight: 700;
 }
 
+#app {
+  grid-template-columns: repeat(auto-fit, minmax(auto, 30rem));
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto;
+  display: grid;
+  position: relative;
+}
+
 .section-header .arrow, .section-header .icon {
   aspect-ratio: 1;
   height: 60px;
+  margin: 0 1rem;
 }
 
 .section-header {
@@ -46,16 +56,38 @@ header:not(.section-header) h1 {
   display: flex;
 }
 
+.section-header__headline {
+  text-align: center;
+}
+
 .section-header .arrow {
   height: 20px;
 }
 
 section {
-  max-width: 80rem;
   border: 2px solid #000;
   border-radius: 10px;
-  margin: 0 auto 3rem;
+  margin-bottom: 3rem;
   padding: 2rem;
+}
+
+label {
+  font-size: 1.2em;
+}
+
+input {
+  border: 2px solid var(--color-primary);
+  border-radius: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+input:focus {
+  outline-color: var(--color-primary--dark);
+}
+
+input:focus-visible {
+  outline: 3px solid var(--color-primary--dark);
 }
 
 .section-content {
@@ -63,7 +95,11 @@ section {
   border-top: 2px solid #000;
   margin: 0 auto;
   padding: 2rem;
-  font-size: 2.4rem;
+}
+
+.icon--submit {
+  margin: 2rem auto 0;
+  display: block;
 }
 
 .output {
@@ -74,9 +110,9 @@ section {
 .border-gradient {
   width: 100%;
   background-image: linear-gradient(var(--color-primary), var(--color-primary--dark));
-  border-radius: 2rem;
+  border-radius: 1rem;
   margin: auto;
-  padding: 2rem;
+  padding: 1rem;
   position: sticky;
   top: 10%;
   overflow: hidden;
@@ -85,25 +121,27 @@ section {
 .text-box {
   text-align: center;
   background-color: #fff;
-  border-radius: 2rem;
+  border-radius: 1rem;
   padding: 3rem;
+  font-size: 1rem;
 }
 
 .text-box span {
   color: var(--color-primary);
   margin-bottom: 2rem;
-  font-size: 3rem;
+  font-size: 6em;
+  font-weight: 700;
   text-decoration: underline;
 }
 
 .text-box h2 {
   color: var(--color-primary);
   margin-bottom: 2rem;
-  font-size: 8.5rem;
+  font-size: 2em;
 }
 
 .text-box p {
-  font-size: 2.5rem;
+  font-size: 1.6em;
   font-weight: 700;
 }
 
@@ -117,17 +155,6 @@ section {
   font-size: 20px;
   text-decoration: none;
   display: block;
-}
-
-#app {
-  max-width: 75rem;
-  width: 88%;
-  grid-template-columns: 2fr 1fr;
-  place-content: stretch center;
-  gap: 4rem;
-  margin: 0 auto;
-  display: grid;
-  position: relative;
 }
 
 /*# sourceMappingURL=index.971c2ea4.css.map */

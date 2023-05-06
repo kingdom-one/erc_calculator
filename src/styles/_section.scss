@@ -2,15 +2,31 @@
 section {
 	border: 2px solid black;
 	border-radius: 10px;
-	max-width: 80rem;
 	padding: 2rem;
-	margin: 0 auto 3rem auto;
+	margin-bottom: 3rem;
 }
-
+label {
+	font-size: 1.2em;
+}
+input {
+	border: 2px solid var(--color-primary);
+	border-radius: 1rem;
+	padding: 1rem;
+	margin-top: 2rem;
+	&:focus {
+		outline-color: var(--color-primary--dark);
+	}
+	&:focus-visible {
+		outline: 3px solid var(--color-primary--dark);
+	}
+}
 .section-content {
 	border-top: 2px solid black;
 	margin: 0 auto;
 	padding: 2rem;
-	font-size: 2.4rem;
 	text-align: center;
+}
+.icon--submit {
+	display: block;
+	margin: 2rem auto 0;
 }

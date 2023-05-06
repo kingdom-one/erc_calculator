@@ -1,1 +1,79 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>ERC Calculator Markup</title><link rel="stylesheet" href="/index.6e4f73b9.css"></head><body> <header> <h1> Estimate Your Employee Retention Credit Today! </h1> <p>We’re so glad you’re interested in learning more about the Employee Retention Credit available to you through the Federal Government. Please complete this brief form so our ERC Team can connect with you for your next step in the ERC process. </p> </header> <main id="app"> <div class="form-fields"> <section id="tax-year"> <header class="section-header"> <img class="icon" src="/calendar.f4fab8a9.png"> <img class="hide icon" src="/calendar_color.112c9f33.png"> <h2 class="section__headline">Tax Year</h2> <img class="arrow" src="/arrow.b7fffa68.png"> </header> <form class="section-content"> <input type="radio" id="2020" name="tax-year" value="2020"> <label for="2020">2020</label><br> <input type="radio" id="2021" name="tax-year" value="2021"> <label for="2021">2021</label><br> <img src="/checkmark.41615e6e.png"> </form> </section> <section id="employees"> <header class="section-header"> <img class="icon" src="/employee.f2e29661.png"> <img class="hide icon" src="/employee_color.010428ab.png"> <h2 class="section__headline">Number of Full-Time</h2> <img class="arrow" src="/arrow.b7fffa68.png"> </header> <form class="section-content"> <label for="numEmployees">Enter the number of Full-Time, Non-Clergy Employees On Staff In A Single Quarter (making over $40,000 annually).</label><br> <input type="text" id="numEmployees" name="numEmployees"> </form> <img src="/checkmark.41615e6e.png"> </section> <section id="loan">  <header class="section-header"> <img class="icon" src="/check.db57237f.png"> <img class="hide icon" src="/check_color.ccfa6ddd.png"> <h2 class="section__headline">PPP Loan</h2> <img class="arrow" src="/arrow.b7fffa68.png"> </header> <form class="section-content"> <input type="number" step="1" id="loanAmount" name="loanAmount"> <img src="/checkmark.41615e6e.png"> </form> </section> <a href="#" class="greenbtn">Estimate</a> </div> <aside class="output"> <div class="border-gradient"> <div class="text-box"> <span>Potential ERC Funds</span> <h2>$00,000</h2> <p>Of Potential Savings Per Quarter</p> <a href="#" class="greenbtn">Reset</a> </div> </div> </aside> </main> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ERC Calculator Markup</title>
+    <link rel="stylesheet" href="/index.971c2ea4.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Estimate Your Employee Retention Credit Today!
+        </h1>
+        <p>We’re so glad you’re interested in learning more about the Employee Retention Credit available to you through the Federal Government. Please complete this brief form so our ERC
+            Team can connect with you for your next step in the ERC process.
+        </p>
+    </header>
+    <main id="app">
+        <div class="form-fields">
+            <section id="tax-year">
+                <header class="section-header">
+                    <img class="icon" src="/calendar.45359e16.png">
+                    <img class="icon hide" src="/calendar_color.41da2be3.png">
+                    <h2 class="section-header__headline">Tax Year</h2>
+                    <img class="arrow" src="/arrow.bd44c546.png">
+                </header>
+                <form class="section-content">
+                    <input type="radio" id="2020" name="tax-year" value="2020">
+                    <label for="2020">2020</label><br>
+                    <input type="radio" id="2021" name="tax-year" value="2021">
+                    <label for="2021">2021</label><br>
+                    <img class="icon--submit" src="/checkmark.fc7f15ce.png">
+                </form>
+            </section>
+            <section id="employees">
+                <header class="section-header">
+                    <img class="icon" src="/employee.57e25baa.png">
+                    <img class="icon hide" src="/employee_color.a392d6d1.png">
+                    <h2 class="section-header__headline">Number of Full-Time</h2>
+                    <img class="arrow" src="/arrow.bd44c546.png">
+                </header>
+                <form class="section-content">
+                    <label for="numEmployees">Enter the number of Full-Time, Non-Clergy Employees On Staff In A Single Quarter (making over $40,000 annually).</label><br>
+                    <input type="text" id="numEmployees" name="numEmployees">
+                </form>
+                <img class="icon--submit" src="/checkmark.fc7f15ce.png">
+            </section>
+            <section id="loan">
+                <!-- default version -->
+                <header class="section-header">
+                    <img class="icon" src="/check.3ecc7a52.png">
+                    <img class="icon hide" src="/check_color.99e13225.png">
+                    <h2 class="section-header__headline">PPP Loan</h2>
+                    <img class="arrow" src="/arrow.bd44c546.png">
+                </header>
+                <form class="section-content">
+                    <input type="number" step="1" id="loanAmount" name="loanAmount">
+                    <img class="icon--submit" src="/checkmark.fc7f15ce.png">
+                </form>
+            </section>
+            <a href="#" class="greenbtn">Estimate</a>
+        </div>
+        <aside class="output">
+            <div class="border-gradient">
+                <div class="text-box">
+                    <h2>Potential ERC Funds</h2>
+                    <span>$00,000</span>
+                    <p>Of Potential Savings Per Quarter</p>
+                    <a href="#" class="greenbtn">Reset</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+<script src="/erc_calculator.59712999.js"></script></body>
+
+</html>
