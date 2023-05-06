@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ERC Calculator Markup</title>
+    <link rel="stylesheet" href="./styles/main.scss">
+    <script src="./js/App.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Estimate Your Employee Retention Credit Today!
+        </h1>
+        <p>We’re so glad you’re interested in learning more about the Employee Retention Credit available to you through the Federal Government. Please complete this brief form so our ERC
+            Team can connect with you for your next step in the ERC process.
+        </p>
+    </header>
+    <main id="app">
+        <div class="form-fields">
+            <section id="tax-year">
+                <header class="section-header">
+                    <img class="icon" src="/icons/calendar.png" />
+                    <img class="icon hide" src="/icons/calendar_color.png" />
+                    <h2 class="section-header__headline">Tax Year</h2>
+                    <img class="arrow" src="/icons/arrow.png" />
+                </header>
+                <form class="section-content hide">
+                    <input type="radio" name="tax-year" value="2020" />
+                    <label for="2020">2020</label><br />
+                    <input type="radio" name="tax-year" value="2021" />
+                    <label for="2021">2021</label><br />
+                    <button class="submit"><img class="icon--submit" src="/icons/checkmark.png" /></button>
+                </form>
+            </section>
+            <section id="employees">
+                <header class="section-header">
+                    <img class="icon" src="/icons/employee.png" />
+                    <img class="icon hide" src="/icons/employee_color.png" />
+                    <h2 class="section-header__headline">Number of Full-Time</h2>
+                    <img class="arrow" src="/icons/arrow.png" />
+                </header>
+                <form class="section-content hide">
+                    <label for="numEmployees">Enter the number of Full-Time, Non-Clergy Employees On Staff In A Single Quarter (making over $40,000 annually).</label><br />
+                    <input type="numer" step="1" pattern="\d*" id="numEmployees" name="numEmployees" />
+                    <button class="submit"><img class="icon--submit" src="/icons/checkmark.png" /></button>
+                </form>
+            </section>
+            <section id="loan">
+                <header class="section-header">
+                    <img class="icon" src="/icons/check.png" />
+                    <img class="icon hide" src="/icons/check_color.png" />
+                    <h2 class="section-header__headline">PPP Loan</h2>
+                    <img class="arrow" src="/icons/arrow.png">
+                </header>
+                <form class="section-content hide">
+                    <input type="number" step="1" id="loanAmount" name="loanAmount" />
+                    <button class="submit">
+                        <img class="icon--submit" src="/icons/checkmark.png" />
+                    </button>
+                </form>
+            </section>
+            <div class="buttons">
+                <button class="greenbtn" id="estimateBtn">Estimate</button>
+                <div class="alert"></div>
+            </div>
+        </div>
+        <aside class="output">
+            <div class="border-gradient">
+                <div class="text-box">
+                    <h2>Potential ERC Funds:</h2>
+                    <span>$00,000</span>
+                    <!-- <p>Of Potential Savings Per Quarter</p> -->
+                    <button class="greenbtn" id="resetBtn">Reset</button>
+                </div>
+            </div>
+        </aside>
+    </main>
+</body>
+
+</html>

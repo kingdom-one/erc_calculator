@@ -1,0 +1,22 @@
+:root {
+	--color-primary: #00ad82;
+	--color-primary--dark: #0a614b;
+}
+*,
+*::before,
+*::after {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.6rem;
+}
+
+.hide {
+	display: none;
+	opacity: 0;
+}
